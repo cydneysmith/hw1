@@ -439,6 +439,10 @@ FROM roles;
 
 -- The SQL statement for the movies output
 -- TODO!
+SELECT movies.title, movies.year_released, movies.mpaa_rating, studios.name
+FROM movies
+INNER JOIN studios on studios.id = movies.studio_id;
+
 
 -- Prints a header for the cast output
 .print ""
@@ -449,5 +453,9 @@ FROM roles;
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT movies.title, actors.actor_name, roles.character
+FROM movies
+INNER JOIN roles on movies.id = roles.movie_id
+INNER JOIN actors on actors.id = roles.actor_id;
 
 
