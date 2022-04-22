@@ -219,9 +219,6 @@ VALUES (
   "Anne Hathaway"
 );
 
-SELECT *
-FROM actors;
-
 INSERT INTO movies (
   title,
   year_released,
@@ -260,9 +257,6 @@ VALUES (
   "PG-13",
   "1"
 );
-
-SELECT *
-FROM movies;
 
 INSERT INTO roles (
   character,
@@ -429,8 +423,6 @@ VALUES (
   "3"
 );
 
-SELECT * 
-FROM roles;
 
 -- Prints a header for the movies output
 .print "Movies"
